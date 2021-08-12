@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>gues the object</title>
+        <title>Image recognition</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+       <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <center>
+        <h1 id="h1">image recognizer</h1>
+        <br>
+        <p>Model is trained to identify the folowing obbjects:</p>
+        <br>
+        <div id="1">
+            <h2>Watch</h2>
+            <br>
+            <h3>Mouse</h3>
+            <br>
+            <h4>Brother</h4>
+            <br>
+            <h5>Sister</h5>
+        </div>
+        <label>Webcam view</label>
+        <div id="camera"></div>
+        <br>
+        <br>
+        <br>
+        <div id="result"></div>
+        <br>
+        <button onclick="take_snapshot();" class="btn btn-info">Capture Image</button>
+        <br><br>
+        <button onclick="check();" class="btn btn-success">Identify Image</button>
+    </center>
+    </body>
+</html>
